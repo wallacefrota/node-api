@@ -1,3 +1,6 @@
+// DEVELOPED BY - WALLACE FROTA @frotadev
+
+
 //importando as bibliotecas
 const express = require("express");
 const cors = require("cors");
