@@ -18,7 +18,7 @@ const ProductSchema = new  mongoose.Schema({
     type: String,
     required: true,
    },
-   //salva a data de criação de cada produto auomaticamente
+   //salva a data de criação de cada produto automaticamente
    createdAt: {
        type: Date,
        default: Date.now,
