@@ -3,7 +3,8 @@ const express = require("express");
 const routes = express.Router();
 
 const ProductController = require("./controllers/ProductController");
-//definindo rotas
+
+//definindo rotas e chamando os metodos criados no ProductController
 routes.get("/products", ProductController.index);
 routes.get("/products/:id", ProductController.show);
 routes.post("/products", ProductController.store);
