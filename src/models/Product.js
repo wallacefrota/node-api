@@ -5,7 +5,7 @@ const mongoosePaginate = require("mongoose-paginate");
 
 //definindo a variavel ProductSchema
 const ProductSchema = new  mongoose.Schema({
-//passando objeto, os campos do produto.
+//passando objeto, os campos de cada produto.
    title: {
        type: String,
        required:  true,
