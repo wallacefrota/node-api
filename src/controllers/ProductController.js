@@ -33,7 +33,7 @@ module.exports = {
     async update(req, res) {
         //unindo produto com a atualizações vindas do body. new: true = retorna atualizado sempre
         const product = await Product.findByIdAndUpdate(req.params.id, req.body, {
-            new: true
+            new: true // retorna o produto atualizado.
         });
 
         return res.json(product);
@@ -41,10 +41,10 @@ module.exports = {
 
     //definindo rota de remoção do produto
     async destroy(req, res) {
-        const product = await Product.findByIdAndRemove(req.params.id);
+        await Product.findByIdAndRemove(req.params.id);
         
         //retornando resposta de sucesso sem nenhum conteúdo
-        return res.send();
+        return res.send("Excluído com sucesso.");
     }
     
 };
