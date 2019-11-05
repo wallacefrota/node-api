@@ -1,6 +1,5 @@
 // DEVELOPED BY - WALLACE FROTA @frotadev
 
-
 //importando as bibliotecas
 const express = require("express");
 const cors = require("cors");
@@ -19,10 +18,10 @@ mongoose.connect("mongodb://192.168.99.102:27017/node-api",
 { useNewUrlParser: true});
 
 //dando um requireDir no model criado os product
-requireDir("./src/models/");
+requireDir("./src/models");
 
-//Rotas = utilizando o routes exportado. use = recebe todo tipo de requisição
-//quando receber uma requisição pelo /api > mandar pro routes 
+//Rotas = utilizando o routes exportado.
+//O use recebe todos os tipo de requisições, quando receber uma requisição pelo /api > mandar pro routes que tem todas as rotas 
 app.use("/api", require("./src/routes"));
 
 //utilizando a porta
