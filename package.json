@@ -1,0 +1,27 @@
+{
+  "name": "node-api",
+  "version": "1.0.0",
+  "description": "API desenvolvida em node, utilizando o docker e mongodb do curso starter de NodeJs da RocketSeat",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WallaceFrota/node-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WallaceFrota/node-api/issues"
+  },
+  "homepage": "https://github.com/WallaceFrota/node-api#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose-paginate": "^5.0.3",
+    "require-dir": "^1.2.0"
+  }
+}
