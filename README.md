@@ -1,81 +1,47 @@
-# node-api
+[![nodejs](https://img.shields.io/badge/nodejs-12.16.3-026E00)](https://nodejs.org/en/download/)
+[![npm](https://img.shields.io/npm/v/npm?color=%23EE7A3B&label=npm&style=plastice&logo=npm)](https://npm.org/)
+# Node-Api
+
 API desenvolvida em node, utilizando o docker e mongodb do curso starter de NodeJs da RocketSeat
 
-### Começando instalações necessárias.
+## Começando
+Essas instruções fornecerão uma cópia do projeto em execução na sua máquina local para fins de desenvolvimento e testes.
 
-Iniciando projeto, dentro da pasta do projeto no cmd digite o comando.
+### Pré-requisitos
 
+Para rodar a aplicação você precisa ter o node instalado em sua máquina.
+[Instalar](https://nodejs.org/en/docs/)
+
+# Clone este repositório
 ```
-npm init -y
+# Em seu terminal
+git clone https://github.com/WallaceFrota/ecoleta.git
 ```
-
-Express para trabalhar com as rotas.
-
+# Instalação
+Instale todas as bibliotecas à partir do npm ou yarn
 ```
-npm install express
+npm install
 ```
-
-
-Usando o **docker** para trabalhar com o mongodb, baixe para seu computador aqui -> [docker](https://docs.docker.com)
-
-
-Verificando se instalação foi bem sucedida, no terminal digite **docker** se retornar várias coisas ocorreu tudo bem.
-
-
-Baixando a máquina (container) virtual mongodb
-
+Ou
 ```
-docker pull mongo
+yarn install
 ```
 
-
-Subindo a máquina redirecionando portas
-
+# iniciando a api
 ```
-docker run --name mongodb -p 27017:27017 -d mongo
+npm start server.js
 ```
+## Construído com
+Algumas tecnologias utilizadas no desenvolvimento.
 
+| NOME | README |
+| ------ | ------ |
+| [NodeJs](https://nodejs.org/en/docs/)  | Interpretador de JavaScript assíncrono |
+| [MongoDB](https://www.mongodb.com/) | MongoDB é um banco de dados distribuído, baseado em documentos. |
+| [Mongoose](https://mongoosejs.com/) | Modelagem de objeto do mongodb para node.js |
+| [Docker](https://www.docker.com/) | Docker é um software contêiner que fornece uma camada de abstração e automação para virtualização de sistema operacional no Windows e no Linux |
 
-Verificar se está iniciada
-
-**docker ps**
-
-
-Testando no navegador
-
-**localhost:27017** ou o ip docker
-
-
-Utilizando o **robo3t** para verificar os dados dos produtos salvos no mongodb
-
-Download: [robo3t](https://robomongo.org/)
-
-**Utilizando:** Clique em **create** para criar uma conexão, deixe **localhost e porta padrão 27017, se não funcionar com localhost coloque o ip do docker**, dê um **nome**, aperte em **save** e **connect**.
-
-
-Utilizando o mongoose como dependência de produção.
-
-```
-npm install mongoose
-```
-**Mongoose é um orm de banco não relacionais em mongodb. relação de tranformar as tabelas em objetos JavaScript**
-
-
-Usando o require-dir para obter o arquivos de todo o diretório.
-
-```
-npm install require-dir
-```
-
-Utilizando o **mongoose-paginate** para trabalhar com paginação.
-
-```
-npm install mongoose-paginate
-```
-
-
-Utilizando o **cors** para a aplicação poder ser acessada por outros domínios
-
-```
-npm install cors
-```
+## Autor
+* **Wallace Frota**
+[Linkedin](https://linkedin.com/in/wallacefrota)
+[GitHub](https://github.com/WallaceFrota)
