@@ -14,8 +14,8 @@ Para rodar a aplicação você precisa ter o node instalado em sua máquina.
 
 # Clone este repositório
 ```
-# Em seu terminal
-git clone https://github.com/WallaceFrota/node-api.git
+# Em seu terminal (por exemplo, Terminal, iTerm, Git Bash ou Git Shell) e digite:
+$ git clone https://github.com/WallaceFrota/node-api.git
 ```
 # Instalação
 Instale todas as bibliotecas à partir do npm ou yarn
